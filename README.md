@@ -17,8 +17,9 @@ This is a simple portfolio app built using React and Expo, allowing users to sho
 - [Insert other libraries or tools used]
 
 ## Screenshots
+![image](https://github.com/RajalakshmiR24/Portfolio_Mobile_App/assets/127002476/af5777c1-54c4-4c5e-ac20-dcf035221664)
 
-[Insert screenshots of your app in action]
+![image](https://github.com/RajalakshmiR24/Portfolio_Mobile_App/assets/127002476/84ab37d1-814b-4465-8968-783d69210f36)
 
 ## Installation
 
@@ -29,8 +30,8 @@ This is a simple portfolio app built using React and Expo, allowing users to sho
 
 2. Navigate into the project directory:
 
-  ```bash
-  cd portfolio-app
+   ```bash
+   cd portfolio-app
 
 3. Install dependencies:
 
@@ -41,9 +42,6 @@ This is a simple portfolio app built using React and Expo, allowing users to sho
 
     ```bash
     npm start
-
-
-
 ## Contact
 
 RAJALAKSHMI - rajalakshmi245806@gmail.com
