@@ -31,7 +31,7 @@ This is a simple portfolio app built using React and Expo, allowing users to sho
 2. Navigate into the project directory:
 
    ```bash
-   cd portfolio-app
+   cd Portfolio_Mobile_App
 
 3. Install dependencies:
 
