@@ -1,20 +1,20 @@
 export const SCHOOLS = [
   {
-    university: 'Butler University',
-    degree: 'Master of Business Administration',
-    subject: 'Finance',
-    location: 'Indianapolis, IN',
-    date: 'August 2008',
-    link: 'https://www.butler.edu/mba',
-    image: require('../assets/butler.png')
+    university: 'Vels University',
+    degree: 'Master of Science',
+    subject: 'Information Technology',
+    location: 'Chennai, IN',
+    date: 'May 2023',
+    link: 'https://vistas.ac.in/',
+    image: require('../assets/vels.png')
   },
   {
-    university: 'Purdue University',
+    university: '(Madras University) Apollo Arts and Science College',
     degree: 'Bachelor of Science',
-    subject: 'Computer Engineering',
-    location: 'West Lafayette, In',
-    date: 'May 1997',
-    link: 'https://engineering.purdue.edu/ECE',
-    image: require('../assets/purdue.png')
+    subject: 'Software Application',
+    location: 'Chennai, In',
+    date: 'May 2021',
+    link: 'https://www.unom.ac.in/',
+    image: require('../assets/Apollo.jpg')
   }
 ];

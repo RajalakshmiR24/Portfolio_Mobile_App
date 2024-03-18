@@ -1,77 +1,63 @@
 import React from 'react';
-import { Card, Text, Divider, Chip, Button } from 'react-native-paper';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { Card, Text, Divider, Button } from 'react-native-paper';
+import { StyleSheet, View, ScrollView, TouchableOpacity, Linking } from 'react-native'; // Import TouchableOpacity and Linking
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Linking } from 'expo';
-import {responsiveFontSize} from '../util/font';
+import { responsiveFontSize } from '../util/font';
 import NavBar from '../components/navbar.component';
 
 const ContactScreen = () => {
-
   const sendEmail = () => {
-    Linking.openURL(`mailto:${EMAIL}`);
+    Linking.openURL(`mailto:rajalakshmi245806@gmail.com`);
+  }
+
+  const openWebsite = () => {
+    Linking.openURL(`https://zingy-cranachan-3b920a.netlify.app/`);
   }
 
   const mainFont = responsiveFontSize(20);
-  const chipFont = responsiveFontSize(18);
 
   const styles = StyleSheet.create({
     safeArea: {
       flex: 1,
-      backgroundColor: '#006db0'
+      backgroundColor: '#fff'
     },
     container: {
       flex: 1,
       flexDirection: 'column',
-      backgroundColor: '#e0e0e0',
-    },
-    containerContent: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      paddingVertical: 15,
-
+      backgroundColor: '#f0f0f0',
+      padding: 20,
     },
     card: {
-      width: '90%',
-      height: null,
-      paddingVertical: 20,
-      paddingHorizontal: 10
-     },
-    content: {
+      marginBottom: 20,
+      elevation: 4,
+      backgroundColor: '#fff',
+      borderRadius: 10,
+    },
+    cardTitle: {
       fontSize: mainFont,
-      marginVertical: 15,
+      fontWeight: 'bold',
+      marginBottom: 10,
+      color: '#333',
     },
-    center: {
-      alignSelf: 'center',
+    cardContent: {
+      fontSize: mainFont,
+      color: '#666',
+      marginBottom: 10,
     },
-    image: {
-      height: 300,
-      width: 300,
-      alignSelf: 'center',
-      marginBottom: 15,
+    link: {
+      color: '#006db0',
+      textDecorationLine: 'underline',
     },
-    chipBox: {
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      flex: 0,
-      justifyContent: 'center'
-    },
-    chip: {
+    button: {
       backgroundColor: '#006db0',
-      marginHorizontal: 5,
-      marginVertical: 2,
+      padding: 10,
+      borderRadius: 5,
     },
-    chipText: {
-      color: 'white',
-      fontSize: chipFont,
-    },
-    actions: {
-      marginTop: 10,
-      justifyContent: 'center',
-    },
-    actionLabel: {
+    buttonText: {
       fontSize: mainFont,
-    }
+      color: '#fff',
+      textAlign: 'center',
+    },
   });
 
   return (
@@ -84,35 +70,22 @@ const ContactScreen = () => {
         centerContent={true}
       >
         <Card style={styles.card}>
-          <Card.Cover source={require('../assets/map.png')} style={styles.image}/>
           <Card.Content>
-            <Text style={[styles.center, styles.content]}>
-              I currently reside in southern Broward County Florida.
-            </Text>
-            <Text style={styles.content}>
-              I would be interested in hearing about opportunities in South or Central Florida,
-              including these markets:
-            </Text>
-            <View style={styles.chipBox}>
-              {['Fort Lauderdale', 'Miami', 'West Palm Beach', 'Fort Myers', 'Tampa', 'Orlando'].map(
-                (city) => (
-                  <Chip key={city} style={styles.chip} textStyle={styles.chipText}>{city}</Chip>
-                ),
-              )}
-            </View>
+            <Text style={styles.cardTitle}>Contact Information</Text>
+            <Text style={styles.cardContent}>Email: rajalakshmi245806@gmail.com</Text>
+            <Text style={styles.cardContent}>Phone: +91-8248492118</Text>
+            <Text style={styles.cardContent}>Project: <Text style={styles.link} onPress={openWebsite}>My Protfolio</Text></Text>
+            <Text style={styles.cardContent}>Location: Chennai, Tamil Nadu, India</Text>
           </Card.Content>
-          <Card.Actions style={styles.actions}>
-            <Button
-              labelStyle={styles.actionLabel} 
-              onPress={sendEmail}
-            >E-mail Me</Button>
+          <Card.Actions>
+            <TouchableOpacity style={styles.button} onPress={sendEmail}>
+              <Text style={styles.buttonText}>Contact Me via Email</Text>
+            </TouchableOpacity>
           </Card.Actions>
         </Card>
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-
 
 export default ContactScreen;
