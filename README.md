@@ -1,16 +1,3 @@
-# Expo Demo App
+# Portfolio Mobile App
 
-This app is my attempt to duplicate much of my 
-[portfolio page](https://dan-mba.github.io)
- as a React Native app.
-<br/><br/>
-This app is built using 
-[Expo](https://expo.io)
- and requires the `expo-cli` to run.
-
----
-
-### expo start
-
-This command starts the Expo server which compiles the code and 
-serves it to a device running the Expo app.
+![Portfolio-expo](https://github.com/RajalakshmiR24/Portfolio_Mobile_App/assets/127002476/c4358c6b-880c-4c2b-922a-6ad58f1cb0f1)
