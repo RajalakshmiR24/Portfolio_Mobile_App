@@ -86,7 +86,7 @@ const HomeScreen = ({theme: {colors}}) => {
               labelStyle={styles.buttonLabel}
               icon='caret-right'
               uppercase={false}
-              onPress={() => openBrowser('https://expo.io')}
+              onPress={() => openBrowser('https://expo.dev/accounts/rajalakshmi_2422/snacks')}
             >Expo</Button>
             <Button
               style={styles.button}
